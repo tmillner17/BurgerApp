@@ -1,4 +1,4 @@
-var mysql = require("./node_modules/mysql")
+var mysql = require("mysql")
 
 var connection = mysql.createConnection ({
     host: "cdm1s48crk8itlnr.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
@@ -11,7 +11,7 @@ var connection = mysql.createConnection ({
 if (process.env.JAWSDB_URL) {
     connection = mysqlcreateConnection(process.env.JAWSDB_URL);
 } else {
-    connection = mysqlcreateConnection({
+    connection = mysql.createConnection({
         host: "localhost",
         user: "root",
         password: "password",
