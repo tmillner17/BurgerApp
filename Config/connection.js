@@ -1,12 +1,12 @@
 var mysql = require("mysql")
 
-var connection = mysql.createConnection ({
-    host: "cdm1s48crk8itlnr.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-    port: 3306,
-    user: "sk7y4o4ble1x59rp",
-    password: "ww1uxnsvmn6zrea9",
-    database: "lyk1ufig1r8xtgso"
-});
+// var connection = mysql.createConnection ({
+//     host: "cdm1s48crk8itlnr.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+//     port: 3306,
+//     user: "sk7y4o4ble1x59rp",
+//     password: "ww1uxnsvmn6zrea9",
+//     database: "lyk1ufig1r8xtgso"
+// });
 
 if (process.env.JAWSDB_URL) {
     connection = mysqlcreateConnection(process.env.JAWSDB_URL);
