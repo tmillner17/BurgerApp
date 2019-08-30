@@ -1,4 +1,4 @@
-var mysql = require("mysql")
+var mysql = require("./node_modules/mysql")
 
 var connection = mysql.createConnection ({
     host: "cdm1s48crk8itlnr.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
